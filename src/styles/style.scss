@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "big";
+    src: url("../fonts/DNFBitBitTTF.ttf");
+}
+
+@font-face {
+    font-family: "small";
+    src: url("../fonts/GmarketSansTTFMedium.ttf");
+}
+
 a {
     color: inherit;
     font-style: inherit;
@@ -6,6 +16,7 @@ a {
 
 body {
     background-color: #ffffff;
+    // font-family: "big-f";
     //-webkit-font-smoothing: antialiased;
 }
 

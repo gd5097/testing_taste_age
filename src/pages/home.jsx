@@ -19,7 +19,10 @@ export default function HomePage() {
                     width: 100px;
                     height: 100px;
 
-                    background-color: black;
+                    background-color: white;
+
+                    font-size: 3rem;
+                    font-family: "small";
                 `}
             >
                 가나다라
@@ -30,6 +33,9 @@ export default function HomePage() {
                     height: 150px;
 
                     background-color: cyan;
+
+                    font-size: 3rem;
+                    font-family: "big";
                 `}
             >
                 마바사아
