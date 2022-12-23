@@ -3,6 +3,8 @@ import { css, useTheme } from "@emotion/react";
 import DefaultLayout from "../layouts/default";
 
 import HelloWorld from "../components/hello-world";
+import Title from '../components/Title';
+import Button from "../components/button";
 
 export default function HomePage() {
     const theme = useTheme();
@@ -14,27 +16,8 @@ export default function HomePage() {
 
     return(
         <DefaultLayout>
-            <div
-                css={css`
-                    width: 100px;
-                    height: 100px;
-
-                    background-color: black;
-                `}
-            >
-                가나다라
-            </div>
-            <div
-                css={css`
-                    width: 150px;
-                    height: 150px;
-
-                    background-color: cyan;
-                `}
-            >
-                마바사아
-            </div>
-            <HelloWorld />            
+        <Title size = "3.75rem"/>
+        <Button text = "테스트 시작하기" fontsize ="1.250rem"></Button>            
         </DefaultLayout>
     );
 }
