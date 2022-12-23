@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { css } from "@emotion/react";
 
 import DefaultLayout from "../layouts/default";
@@ -8,13 +8,16 @@ import { useNavigate } from "react-router-dom";
 
 import Baby from "../images/baby.png";
 import Couple from "../images/couple.png";
-
+import Emplo from "../images/qqq.png";
 import Family from "../images/family.png";
 import Grand from "../images/grandparents.png";
+import { AppContext } from "../app";
 
 export default function ResultPage(){
 
-    const cur_age = 10;
+    const {point, managePoint} = useContext(AppContext);
+    const cur_age = point;
+
     const navigate = useNavigate();
 
     return(
