@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { css, useTheme } from "@emotion/react";
 import DefaultLayout from "../layouts/default";
 
+import Number from '../components/number';
 import BrownText from "../components/browText";
 import Title from '../components/Title';
 import Button from "../components/button";
@@ -33,7 +34,7 @@ export default function HomePage() {
                     `
                 }>
                 <BrownText size = "2rem" text = {["당신의", <br/>, "입맛의 나이는?"]}></BrownText>
-                <Title size={"3.75rem"} border = {"5px"}></Title>
+                <Title size={"3.75rem"} border = {"5px"} breack={"\n"}></Title>
                 <div css = {css `
                     font-family : big;
                     color : #4E4D4D;
