@@ -6,6 +6,12 @@ import Title from "../components/Title";
 import AgeIndicator from "../components/age-indicator";
 import { useNavigate } from "react-router-dom";
 
+import Baby from "../images/baby.png";
+import Couple from "../images/couple.png";
+
+import Family from "../images/family.png";
+import Grand from "../images/grandparents.png";
+
 export default function ResultPage(){
 
     const cur_age = 10;
@@ -36,6 +42,26 @@ export default function ResultPage(){
                 />
                 
                 {cur_age >= 50 && <AgeIndicator age={50}/>}           
+                {cur_age >= 50 && 
+                <div
+                    css={css`
+                        width: 170px;
+                        height: 170px;
+
+                        margin-top: 20px;
+
+                        overflow: hidden;
+                        object-fit: cover;
+                    `}
+                    
+                >
+                    <img 
+                        css={css`
+                            width: 100%;
+                            height: 100%;
+                        `}
+                    src={Grand}/>
+                    </div>}
                 {cur_age >= 50 && <div css={css`
                     width: 220px;
                     height: 22px;
@@ -89,6 +115,26 @@ export default function ResultPage(){
                     </div>}  
 
                 {(cur_age >= 40 && cur_age < 50) && <AgeIndicator age={40}/>}
+                {(cur_age >= 40 && cur_age < 50) && 
+                <div
+                    css={css`
+                        width: 170px;
+                        height: 170px;
+
+                        margin-top: 20px;
+
+                        overflow: hidden;
+                        object-fit: cover;
+                    `}
+                    
+                >
+                    <img 
+                        css={css`
+                            width: 100%;
+                            height: 100%;
+                        `}
+                    src={Family}/>
+                    </div>}
                 {(cur_age >= 40 && cur_age < 50) && <div css={css`
                     width: 220px;
                     height: 22px;
@@ -145,6 +191,26 @@ export default function ResultPage(){
 
 
                 {(cur_age >= 30 && cur_age < 40) && <AgeIndicator age={30}/>}
+                {(cur_age >= 30 && cur_age < 40) && 
+                <div
+                    css={css`
+                        width: 170px;
+                        height: 170px;
+
+                        margin-top: 20px;
+
+                        overflow: hidden;
+                        object-fit: cover;
+                    `}
+                    
+                >
+                    <img 
+                        css={css`
+                            width: 100%;
+                            height: 100%;
+                        `}
+                    src={Emplo}/>
+                    </div>}
                 {(cur_age >= 30 && cur_age < 40) && <div css={css`
                     width: 220px;
                     height: 22px;
@@ -202,6 +268,27 @@ export default function ResultPage(){
                 
                 
                 {(cur_age >= 20 && cur_age < 30) && <AgeIndicator age={20}/>}
+                {(cur_age >= 20 && cur_age < 30) && 
+                <div
+                    css={css`
+                        width: 170px;
+                        height: 170px;
+
+                        margin-top: 20px;
+
+                        overflow: hidden;
+                        object-fit: cover;
+                    `}
+                    
+                >
+                    <img 
+                        css={css`
+                            width: 100%;
+                            height: 100%;
+                        `}
+                    src={Couple}/>
+                    </div>}
+                
                 {(cur_age >= 20 && cur_age < 30) && <div css={css`
                     width: 220px;
                     height: 22px;
@@ -260,6 +347,27 @@ export default function ResultPage(){
                 
                 
                 {(cur_age >= 10 && cur_age < 20) && <AgeIndicator age={10}/>}
+                {(cur_age >= 10 && cur_age < 20) && 
+                <div
+                    css={css`
+                        width: 170px;
+                        height: 170px;
+
+                        margin-top: 20px;
+
+                        overflow: hidden;
+                        object-fit: cover;
+                    `}
+                    
+                >
+                    <img 
+                        css={css`
+                            width: 100%;
+                            height: 100%;
+                        `}
+                    src={Baby}/>
+                    </div>}
+
                 {(cur_age >= 10 && cur_age < 20) && <div css={css`
                     width: 220px;
                     height: 22px;
