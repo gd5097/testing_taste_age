@@ -2,52 +2,55 @@ import React, { useEffect } from "react";
 import { css, useTheme } from "@emotion/react";
 import DefaultLayout from "../layouts/default";
 
-import HelloWorld from "../components/hello-world";
+import BrownText from "../components/browText";
 import Title from '../components/Title';
 import Button from "../components/button";
+import Yellow from './../components/Ywllow';
+import App from './../app';
 
 export default function HomePage() {
-    const theme = useTheme();
-
-    
-    useEffect(() => {
-        console.log("Test");
-    });
+    const theme = useTheme();        
 
     return(
         <DefaultLayout>
-<<<<<<< HEAD
-        <Title size = "3.75rem"/>
-        <Button text = "테스트 시작하기" fontsize ="1.250rem"></Button>            
-=======
             <div
                 css={css`
-                    width: 100px;
-                    height: 100px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
 
-                    background-color: white;
-
-                    font-size: 3rem;
-                    font-family: "small";
+                justify-content: center;
+                align-items: center;
                 `}
             >
-                가나다라
-            </div>
-            <div
-                css={css`
-                    width: 150px;
-                    height: 150px;
-
-                    background-color: cyan;
-
-                    font-size: 3rem;
-                    font-family: "big";
-                `}
-            >
-                마바사아
-            </div>
-            <HelloWorld />            
->>>>>>> 8175a36b674933bed6777eebace6e83bf23d0b0c
+            
+                <Yellow></Yellow>
+                <div className="height" css = {
+                    css`
+                    height: 100vh;
+                    min-height: 100;
+                    padding-top: 90px;
+                    `
+                }>
+                <BrownText size = "2rem" text = {["당신의", <br/>, "입맛의 나이는?"]}></BrownText>
+                <Title size={"3.75rem"} border = {"5px"}></Title>
+                <div css = {css `
+                    font-family : big;
+                    color : #4E4D4D;
+                    font-size : 1.375rem;
+                    margin-left : 40px;
+                    margin-bottom : 60px;
+                `}>
+                    초딩입맛부터- <br></br>어른입맛까지-
+                </div>
+                <Button fontsize ="1.250rem" paddingsize = "18px 40px" text={"테스트 시작하기"} margin = {"0px"}></Button>
+                </div>
+                <Yellow css = {css`
+                    height: 40px;
+                    position : relative;
+                    transform : translateY(-100%);
+                `}></Yellow>
+            </div>                    
         </DefaultLayout>
     );
 }
