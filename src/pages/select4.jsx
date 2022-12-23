@@ -9,9 +9,9 @@ import { AppContext } from "../app";
 import { useNavigate } from "react-router-dom";
 
 
-import Tteok from "../images/ham.jpg";
+import Tteok from "../images/pizza.jpg";
 
-export default function SelectPage1() {
+export default function SelectPage4() {
     const theme = useTheme();        
     const { point, managePoint } = useContext(AppContext);   
     const navigate = useNavigate();
@@ -33,7 +33,7 @@ export default function SelectPage1() {
                             font-size : 2.6rem;
                             margin-top : 8px;
                         `
-                    }>햄버거</h1>
+                    }>피자</h1>
                     <div css = {css`
                     background-color :#FFF8B9;
                     width : 65vmin;
@@ -62,13 +62,13 @@ export default function SelectPage1() {
                     flex-direction: verticle;
                     justify-content: space-around;
                     `}>
-                    <Click text = "짱싫어" color = "#6B7FEA" onClick={() => {managePoint(7); navigate("/select2")}}></Click>
-                    <Click text = "싫어" color = "#000000" onClick={() => {managePoint(4); navigate("/select2")}}></Click>
-                    <Click text = "좋아" color = "#000000" onClick={() => {managePoint(2); navigate("/select2")}}></Click>
-                    <Click text = "짱좋아" color = "#EA6B7C" onClick={() => {managePoint(1); navigate("/select2")}}></Click>
+                    <Click text = "짱싫어" color = "#6B7FEA" onClick={() => {managePoint(7); navigate("/select5")}}></Click>
+                    <Click text = "싫어" color = "#000000" onClick={() => {managePoint(4); navigate("/select5")}}></Click>
+                    <Click text = "좋아" color = "#000000" onClick={() => {managePoint(1); navigate("/select5")}}></Click>
+                    <Click text = "짱좋아" color = "#EA6B7C" onClick={() => {managePoint(1); navigate("/select5")}}></Click>
                     </div>
                 </div>
-                <Number int = "1" size ="1.25rem"></Number>
+                <Number int = "4" size ="1.25rem"></Number>
             </div>     
         </DefaultLayout>
     );

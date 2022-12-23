@@ -9,7 +9,7 @@ const Number = ({size,int}) => {
         color : #907D5A;
         text-align : center;
     `}>
-      {int} / 20
+      {int} / 10
     </div>
     );
 }

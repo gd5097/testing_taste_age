@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-const Click = ({text, color}) => {
+const Click = ({text, color, onClick}) => {
     return(
         <div css = {css `
         display: flex;
@@ -19,7 +19,9 @@ const Click = ({text, color}) => {
                 }>{text}</p>
             
         </div>
-        <button css ={
+        <button 
+        onClick={onClick}
+        css ={
             css`
             border-radius: 100%;
             border : 3px solid #907D5A;

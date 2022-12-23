@@ -8,9 +8,11 @@ import Title from '../components/Title';
 import Button from "../components/button";
 import Yellow from './../components/Ywllow';
 import App from './../app';
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
     const theme = useTheme();        
+    const navigate = useNavigate();
 
     return(
         <DefaultLayout>
@@ -44,7 +46,9 @@ export default function HomePage() {
                 `}>
                     초딩입맛부터- <br></br>어른입맛까지-
                 </div>
-                <Button fontsize ="1.250rem" paddingsize = "18px 40px" text={"테스트 시작하기"} margin = {"0px"}></Button>
+                <Button fontsize ="1.250rem" paddingsize = "18px 40px" text={"테스트 시작하기"} margin = {"0px"} onClick={() => {
+                    navigate("/select1");
+                }}></Button>
                 </div>
                 <Yellow css = {css`
                     height: 40px;

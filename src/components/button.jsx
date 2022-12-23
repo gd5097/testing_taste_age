@@ -1,9 +1,11 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-const Button = ({text, fontsize, paddingsize, margin }) => {
+const Button = ({text, fontsize, paddingsize, margin, onClick }) => {
     return(
-    <button css = { css`
+    <button 
+        onClick={onClick}
+    css = { css`
         font-family: big;
         border: none;
         color: #907D5A;
