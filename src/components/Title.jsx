@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { useEffect } from 'react';
 
-export default function Title ({size, border}) {
+export default function Title ({breack, size, border}) {
     return(
         <div  
             css={css`
@@ -13,9 +13,10 @@ export default function Title ({size, border}) {
                 text-shadow: -${border} 0 #907D5A, 0 ${border} #907D5A, ${border} 0 #907D5A, 0 -${border} #907D5A;
                 margin-bottom : 10%;
                 margin-top : 5px;
+                white-space : pre-line;
         `}>
             입맛나이
-            <br></br>
+            {breack}
             테스트
         </div>
     );

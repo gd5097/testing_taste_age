@@ -5,6 +5,7 @@ import {Route, Routes} from 'react-router-dom';
 import HomePage from './pages/home';
 import TestPage1 from './pages/test1';
 import TestPage2 from './pages/test2';
+import SelectPage1 from './pages/select1';
 
 export const AppContext = createContext();
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/test1" element={<TestPage1 />} />
                 <Route path="/test2" element={<TestPage2 />} />
+                <Route path="/select-page2" element={<SelectPage1 />} />
             </Routes>
         </AppContext.Provider>
     );
