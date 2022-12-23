@@ -17,9 +17,7 @@ export default function HelloWorld(){
                 padding: 20px;
             `}
         >
-            <div css={css`
-                
-
+            <div css={css`                
                 object-fit: cover;
                 overflow: hidden;
             `}>
