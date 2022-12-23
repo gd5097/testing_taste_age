@@ -16,10 +16,6 @@ export default function HomePage() {
 
     return(
         <DefaultLayout>
-<<<<<<< HEAD
-        <Title size = "3.75rem"/>
-        <Button text = "테스트 시작하기" fontsize ="1.250rem"></Button>            
-=======
             <div
                 css={css`
                     width: 100px;
@@ -47,7 +43,6 @@ export default function HomePage() {
                 마바사아
             </div>
             <HelloWorld />            
->>>>>>> 8175a36b674933bed6777eebace6e83bf23d0b0c
         </DefaultLayout>
     );
 }

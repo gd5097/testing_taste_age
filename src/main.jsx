@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { render } from 'react-dom';
 import { ThemeProvider } from '@emotion/react';
 import {createRoot} from 'react-dom/client';
 import ReactDom, {BrowserRouter} from 'react-router-dom';
 
 import App from './app';
+
+
 
 const app = document.getElementById('app');
 
@@ -19,10 +21,10 @@ const theme = {
 
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter>            
             <ThemeProvider theme={theme}>
                 <App />
-            </ThemeProvider>
+            </ThemeProvider>        
         </BrowserRouter>
     </React.StrictMode>
 );
