@@ -6,6 +6,7 @@ import HomePage from './pages/home';
 import TestPage1 from './pages/test1';
 import TestPage2 from './pages/test2';
 import SelectPage1 from './pages/select1';
+import ResultPage from './pages/result';
 
 export const AppContext = createContext();
 
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/test1" element={<TestPage1 />} />
                 <Route path="/test2" element={<TestPage2 />} />
                 <Route path="/select-page2" element={<SelectPage1 />} />
+                <Route path="/result" element={<ResultPage />} />
             </Routes>
         </AppContext.Provider>
     );
