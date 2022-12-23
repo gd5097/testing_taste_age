@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { css, useTheme } from "@emotion/react";
 import DefaultLayout from "../layouts/default";
 
+import HelloWorld from "../components/hello-world";
 
 export default function HomePage() {
     const theme = useTheme();
@@ -33,6 +34,7 @@ export default function HomePage() {
             >
                 마바사아
             </div>
+            <HelloWorld />            
         </DefaultLayout>
     );
 }
